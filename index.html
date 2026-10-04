@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<!-- TODO: add lang attribute to the html element -->
-<html>
+<html lang="en">
 <head>
-  <!-- TODO: add charset meta and a <title> -->
+  <meta charset="UTF-8">
+  <title>Noora's Profile Page</title>
+  <style>
+    #name{
+      color: palevioletred; 
+      text-align: center;
+    }
+    #one{
+      color: pink; 
+      text-align: center;
+    }
+    #internal{
+      color: black; 
+      background-color: bisque;
+    }
+    #external{
+      color: black; 
+      background-color: beige;
+    }
+    #ordered_List{
+      color: rgb(255, 93, 255);
+    }
+    #unordered_List{
+      color: rgb(225, 60, 88);
+    }
+  </style>
 </head>
 <body>
-  <!--
-    ITCS333 A1 starter. Replace this comment with your profile page.
-    Requirements (see README rubric):
-      - semantic elements: header, nav, main, footer
-      - h1 then h2 heading hierarchy
-      - a link to about.html and one external link
-      - an image with alt text (put the file in assets/)
-      - one ordered list and one unordered list (across both pages)
-  -->
-  <p>TODO: build your profile page here.</p>
+  <header>
+  <h1 id="name">Noora Althawadi</h1>
+  <h2 id="one">ITCS333 Assignment Number one</h2>
+  </header>
+  <nav>
+    <a id="internal" href="about.html">About me page</a>
+    <br>
+    <br>
+    <a id="external" href="https://github.com">Go to GitHub</a>
+  </nav>
+  <main>
+    <img id="picture" src="assets/Student.jpg" width="500" height="500" alt="Profile pic"/>
+    <p>My course schedule</p>
+     <ol id="ordered_List">
+      <li>ITCS333</li>
+      <li>ITCS317</li>
+      <li>ITCS347</li>
+      <li>CHL101</li>
+      <li>ENGL219</li>
+    </ol>
+    <p>ITCS333 Topics</p>
+    <ul id="unordered_List">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java Script</li>
+      <li>PHP</li>
+    </ul>
+  </main>
+    <footer>
+    <p>© 2026 Noora Profile</p>
+  </footer>
 </body>
 </html>
